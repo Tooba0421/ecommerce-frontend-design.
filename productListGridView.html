@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand – Explore Our Range</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/productListViewStyle.css">
+    <link rel="stylesheet" href="css/homePageStyle.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="header">
+        <a href="homePage.html"><img src="assets/logo-colored.png" alt="Logo" class="headLogo"></a>
+        <div class="searchBar rounded">
+            <input type="text" placeholder="Search" class="roundedStart">
+        
+            <div class="moreCategory" id="categoryToggle">
+                <a href="javascript:void(0)">
+                    More Category<i class="fa-solid fa-angle-down"></i>
+                </a>
+                <!-- Dropdown menu -->
+                <div class="categoryMenu" id="categoryMenu">
+                    <a href="#" class="rounded">Automobiles</a>
+                    <a href="#" class="rounded">Clothes and wear</a>
+                    <a href="#" class="rounded">Home interiors</a>
+                    <a href="#" class="rounded">Computer and tech</a>
+                    <a href="#" class="rounded">Tools, equipments</a>
+                    <a href="#" class="rounded">Sports and outdoor</a>
+                    <a href="#" class="rounded">Animals and pets</a>
+                    <a href="#" class="rounded">Machinary tools</a>
+                </div>
+            </div>
+            <a href="#" class="roundedEnd btnText searchButton">Search</a>
+        </div>
+        <div class="iconBar">
+            <a href="#" class="icon">
+                <i class="fa-solid fa-user"></i>
+                <p>Profile</p>
+            </a>
+            <a href="#" class="icon">
+                <img src="assets/Vector.png" alt="messages">
+                <p>Message</p>
+            </a>
+            <a href="#" class="icon">
+                <i class="fa-solid fa-heart"></i>
+                <p>Orders</p>
+            </a>
+            <a href="cartPage.html" class="icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="cartSpace">My cart</p>
+            </a>
+        </div>
+    </header>
+    <hr>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="navOptions">
+            <div class="sideBar"><i class="fa-solid fa-bars"></i></div>
+            <div class="options">
+                <a href="#">All Category</a>
+                <a href="#">Hot offers</a>
+                <a href="#">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <a href="#">Help <i class="fa-solid fa-angle-down"></i></a>
+            </div>
+        </div>
+        <div class="languagePayment">
+            <div class="lang">English, USD <i class="fa-solid fa-angle-down"></i></div>
+            <div class="payment">Ship to <img src="assets/icon.png" alt="country"> <i
+                    class="fa-solid fa-angle-down"></i></div>
+        </div>
+    </nav>
+    <hr>
+
+
+    <!-- filterLinks -->
+    <section class="filterLinks">
+        <a href="#" class="link">Home <i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" class="link">Clothing <i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" class="link">Men's wear <i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" class="link">Summer clothing</a>
+    </section>
+
+    <!-- product filter , grid & list view section  -->
+    <section class="productListView">
+        <div class="productSidebar">
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Category</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <a href="#" class="categoryName rounded">Mobile accessory</a>
+                    <a href="#" class="categoryName rounded">Electronics</a>
+                    <a href="#" class="categoryName rounded">Smartphones</a>
+                    <a href="#" class="categoryName rounded">Modren tech</a>
+                    <a href="#" class="seeAll rounded">See all</a>
+                </div>
+            </div>
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Brands</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <div class="checkBox"><input type="checkbox" id="brand"><label for="brand">Samsung</label></div>
+                    <div class="checkBox"><input type="checkbox" id="brand"><label for="brand">Apple</label></div>
+                    <div class="checkBox"><input type="checkbox" id="brand"><label for="brand">Huawei</label></div>
+                    <div class="checkBox"><input type="checkbox" id="brand"><label for="brand">Pocco</label></div>
+                    <div class="checkBox"><input type="checkbox" id="brand"><label for="brand">Lenovo</label></div>
+                    <a href="#" class="seeAll rounded">See all</a>
+                </div>
+            </div>
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Features</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <div><input type="checkbox" id="feature"><label for="feature">Metallic</label></div>
+                    <div><input type="checkbox" id="feature"><label for="feature">Plastic cover</label></div>
+                    <div><input type="checkbox" id="feature"><label for="feature">8GB Ram</label></div>
+                    <div><input type="checkbox" id="feature"><label for="feature">Super power</label></div>
+                    <div><input type="checkbox" id="feature"><label for="feature">Large Memory</label></div>
+                    <a href="#" class="seeAll rounded">See all</a>
+                </div>
+            </div>
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Price range</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <div class="range-slider">
+                        <div class="slider-track"></div>
+                        <div class="slider-range" id="sliderRange"></div>
+                        <input type="range" id="minRange" min="0" max="1000000" value="0" step="1000">
+                        <input type="range" id="maxRange" min="0" max="1000000" value="999999" step="1000">
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label>Min</label>
+                            <input type="number" id="minInput" placeholder="0" min="0" max="1000000" step="1000">
+                        </div>
+                        <div>
+                            <label>Max</label>
+                            <input type="number" id="maxInput" placeholder="999999" min="0" max="1000000" step="1000">
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary applyBtn" onclick="applyRange()">Apply</button>
+                </div>
+            </div>
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Conditions</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <div><input type="radio" name="condition" id="condition"><label for="condition">Any</label></div>
+                    <div><input type="radio" name="condition" id="condition"><label for="condition">Refurbished</label>
+                    </div>
+                    <div><input type="radio" name="condition" id="condition"><label for="condition">Brand new</label>
+                    </div>
+                    <div><input type="radio" name="condition" id="condition"><label for="condition">Old items</label>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarOption">
+                <div class="categoryHeading">
+                    <p>Ratings</p><i class="fa-solid fa-angle-up sidebarIcon"></i>
+                </div>
+                <div class="sidebarContent">
+                    <div class="rating"><input type="checkbox" id="rating"><label for="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label></div>
+                    <div class="rating"><input type="checkbox" id="rating"><label for="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </label></div>
+                    <div class="rating"><input type="checkbox" id="rating"><label for="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </label></div>
+                    <div class="rating"><input type="checkbox" id="rating"><label for="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </label></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- listGridSection -->
+        <div class="listGridSection">
+            <div class="topContent rounded">
+                <div class="totalItems">
+                    <span>12,911 items in </span>
+                    <strong>Mobile accessory</strong>
+                </div>
+                <div class="filter">
+                    <div class="verify">
+                        <input type="checkbox" name="verified" id="verified" checked>
+                        <label for="verified">Verified only</label>
+                    </div>
+                    <div class="featured rounded">
+                        <p>Featured</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="listGridBtn">
+                        <button id="gridViewBtn" class="rounded-start">
+                          <img src="assets/gridview.png" alt="gridview">
+                        </button>
+                        <button id="listViewBtn" class="rounded-end">
+                          <img src="assets/listview.png" alt="listview">
+                        </button>
+                      </div>                      
+                </div>
+            </div>
+
+            <!-- list section  -->
+            <section class="listSection">
+                <!-- products added through js  -->
+            </section>
+
+            <!-- gridSection -->
+            <section class="gridSection">
+                
+            </section>
+        </div>
+    </section>
+
+    <!-- show more section  -->
+    <section class="showMoreSection">
+        <div class="customDropdown rounded" id="showDropdown">
+            <div class="dropdownToggle">
+                Show 10 <i class="fa-solid fa-angle-down up"></i>
+            </div>
+            <div class="dropdownMenu" id="showMenu">
+                <div class="dropdownItem">Show 10</div>
+                <div class="dropdownItem">Show 20</div>
+                <div class="dropdownItem">Show 30</div>
+            </div>
+        </div>
+        
+        <div class="btn-group pageCount">
+            <button type="button" class="btn showBtn"><i class="fa-solid fa-angle-left"></i></button>
+            <button type="button" class="btn showBtn">1</button>
+            <button type="button" class="btn showBtn">2</button>
+            <button type="button" class="btn showBtn">3</button>
+            <button type="button" class="btn showBtn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+
+    <!-- subscription -->
+    <section class="subscribe">
+        <h3>Subscribe on our newsletter</h3>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="emailSub d-flex">
+            <input class="me-2 rounded ps-2" type="email" placeholder="Email">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="logoIcons">
+            <img src="assets/logo-colored.png" alt="Logo">
+            <p>Best information about the company gies here but now lorem ipsum is</p>
+            <div class="footIcons">
+                <a href="#"><img src="assets/facebook3.jpg" alt="facebook"></a>
+                <a href="#"><img src="assets/twitter3.jpg" alt="twitter"></a>
+                <a href="#"><img src="assets/linkedin3.png" alt="linkedin"></a>
+                <a href="#"><img src="assets/instagram3.png" alt="instagram"></a>
+                <a href="#"><img src="assets/youtube3.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="linkLine">
+                <h6>About</h6>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+            <div class="linkLine">
+                <h6>Partnership</h6>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+            <div class="linkLine">
+                <h6>Information</h6>
+                <a href="#">Help Center</a>
+                <a href="#">Money Refund</a>
+                <a href="#">Shipping</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="linkLine">
+                <h6>For users</h6>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+                <a href="#">Setting</a>
+                <a href="#">My order</a>
+            </div>
+        </div>
+        <div class="getApp">
+            <h6>Get App</h6>
+            <div class="storeButtons">
+                <a href="#" class="storeBtn appStore">
+                    <i class="fa-brands fa-apple"></i>
+                    <div class="text">
+                        <span>Download on the</span>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="storeBtn googlePlay">
+                    <i class="fa-brands fa-google-play"></i>
+                    <div class="text">
+                        <span>Get it on</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright  -->
+    <div class="copyright">
+        <p>&copy; 2023 Ecommerce</p>
+        <div class="footerLang">
+            <a href="#">
+                <img src="assets/americaFlag.png" alt="country"> English
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/homePageIndex.js"></script>
+    <script src="js/productListDetail.js"></script>
+    <script src="js/productGridDetail.js"></script>
+    <script src="js/productListGridViewIndex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js    "></script>
+</body>
+
+</html>

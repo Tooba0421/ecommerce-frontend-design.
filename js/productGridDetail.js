@@ -1,0 +1,66 @@
+const griditem = [
+    {
+        image: "assets/mobile.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/mobile2.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/3.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/2.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/6.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/mobile2.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/7.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/headphone.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "$1128.00",
+        ratingValue: "7.5",
+    },
+    {
+        image: "assets/mobile.jpg",
+        productName: "GoPro HERO6 4K Action Camera - Black",
+        price: "$998.00",
+        oldPrice: "",
+        ratingValue: "7.5",
+    },
+    
+]

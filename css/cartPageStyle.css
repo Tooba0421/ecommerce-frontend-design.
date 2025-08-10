@@ -1,0 +1,295 @@
+.cart,
+.cartHeading,
+.itemFeatures {
+    width: 86%;
+    left: 7%;
+    position: relative;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.cartProducts {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartProduct {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    position: relative;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: first baseline;
+}
+
+.removeBtn {
+    margin: 15px 10px 10px 0px;
+}
+
+.productQuantity p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.productQuantity {
+    margin: 20px 10px 0px 0px;
+}
+
+.customDropdown {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #DEE2E7;
+    background: #fff;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+.dropdownToggle {
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownToggle i {
+    transition: transform .3s;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: 100%;
+    border: 1px solid #DEE2E7;
+    background: #fff;
+    z-index: 100;
+}
+
+.dropdownItem {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+
+.dropdownItem:hover {
+    background: #f8f9fa;
+}
+
+.show { display: block; }
+.active .up { transform: rotate(180deg); }
+
+
+/* delete popup  */
+
+.deletePopup {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    left: 200px; 
+    background: white;
+    border: 1px solid #DEE2E7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    width: 300px;
+    z-index: 10;
+}
+
+.popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.closePopup {
+    cursor: pointer;
+}
+
+.popupActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.cancelBtn {
+    background: none;
+    border: 1px solid #DEE2E7;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.goToHome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartPrice {
+    width: 25%;
+}
+
+.coupon {
+    padding: 20px;
+}
+
+.apply,
+.cartSummary,
+.coupon,
+.cartQuantity,
+.removeBtn,
+.cartProducts,
+.saveLaterProducts a {
+    border: 1px solid #DEE2E7;
+}
+
+.cartSummary {
+    margin: 20px 0px;
+    padding: 12px;
+}
+
+.cartTable {
+    border-collapse: separate;
+    width: 100%;
+}
+
+.cartTable td {
+    padding: 4px 0px;
+}
+
+.cartTable tr td:last-child {
+    text-align: right;
+}
+
+.discountPrice {
+    color: red;
+}
+
+.tax {
+    color: #00B517;
+}
+
+.totalPrice td {
+    border-top: 1px solid #DEE2E7;
+    font-weight: 600;
+}
+
+.totalPrice td:last-child {
+    font-size: 20px;
+}
+
+.checkoutBtn {
+    text-align: center;
+    background-color: #00B517;
+    color: white;
+    width: 100%;
+    margin: 5px 0px;
+    border: none;
+}
+
+.payment {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px 10px 0px;
+}
+
+/* item Features section */
+.itemFeatures {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px;
+}
+
+.itemFeature {
+    margin-right: 50px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.itemFeature p {
+    margin-bottom: 0;
+}
+
+.itemIcon {
+    padding: 10px 14px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #DEE2E7;
+}
+
+/* save for later section  */
+
+.saveLaterProducts {
+    width: 23%;
+}
+
+.saveLaterProducts img {
+    width: 80%;
+}
+
+.saveLaterProducts p {
+    margin: 10px 0px;
+}
+
+.saveLaterProducts a {
+    display: block;
+    width: 60%;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.saveLaterProducts a i {
+    margin-right: 10px;
+}
+
+.saveLaterPrice {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 1285px) {
+    .cartProducts {
+        width: 72%;
+    }
+
+    .cartPrice {
+        width: 27%;
+    }
+}
+
+@media (max-width: 1350px){
+    .saveLaterProducts a{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1158px){
+    .saveLaterProducts a{
+        width: 80%;
+    }
+
+    .itemFeature{
+        margin-right: 30px;
+    }
+}
+
+
