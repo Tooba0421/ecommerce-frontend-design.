@@ -82,7 +82,7 @@ item.forEach(item => {
     </div>
     <div class="productDetail">
     <p>${item.detail}</p>
-    <a href="#" class="seeAll rounded">View details</a>
+    <a href="productDetailPage.html" class="seeAll rounded">View details</a>
     </div>
     </div>
     </div>
@@ -182,3 +182,4 @@ dropdownToggle.addEventListener("click", () => {
     dropdownMenu.classList.toggle("show");
     dropdownToggle.classList.toggle("active");
 });
+
