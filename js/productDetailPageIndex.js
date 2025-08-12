@@ -1,27 +1,39 @@
-document.querySelectorAll('.saveHeart').forEach(wrapper => {
-    const saveBtn = wrapper.querySelector('.saveBtn');
-    const notSaveBtn = wrapper.querySelector('.notSaveBtn');
+// =================== LIKE BUTTON ===================
+function initLikeButtons(wrapperSelector, likeSelector, notLikeSelector) {
+    document.querySelectorAll(wrapperSelector).forEach(wrapper => {
+        const like = wrapper.querySelector(likeSelector);
+        const notLike = wrapper.querySelector(notLikeSelector);
 
-    saveBtn.addEventListener('click', () => {
-        saveBtn.style.display = 'none';
-        notSaveBtn.style.display = 'inline-block';
+        like.addEventListener('click', () => {
+            like.style.display = 'none';
+            notLike.style.display = 'inline-block';
+        });
+
+        notLike.addEventListener('click', () => {
+            notLike.style.display = 'none';
+            like.style.display = 'inline-block';
+        });
     });
+}
 
-    notSaveBtn.addEventListener('click', () => {
-        notSaveBtn.style.display = 'none';
-        saveBtn.style.display = 'inline-block';
+// =============== Tabs switching function =================
+function initTabs(tabSelector, contentSelector) {
+    const tabs = document.querySelectorAll(tabSelector);
+    const contents = document.querySelectorAll(contentSelector);
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById(tab.dataset.tab).classList.add('active');
+        });
     });
-});
+}
 
-const tabs = document.querySelectorAll('.tab');
-const contents = document.querySelectorAll('.tabContent');
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => c.classList.remove('active'));
 
-        tab.classList.add('active');
-        document.getElementById(tab.dataset.tab).classList.add('active');
-    });
-});
+initLikeButtons('.saveHeart', '.saveBtn', '.notSaveBtn');
+initTabs('.tab', '.tabContent');
+
