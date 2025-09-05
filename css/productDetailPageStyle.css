@@ -4,6 +4,9 @@
     left: 7%;
     position: relative;
 }
+.mobInquiry{
+    display: none;
+}
 
 .productDetailSection {
     display: flex;
@@ -86,6 +89,9 @@
 .heading {
     color: #8B96A5;
     width: 30%;
+}
+.value{
+    width: 70%;
 }
 
 .hr {
@@ -405,5 +411,84 @@ li i {
 @media (max-width: 1150px) {
     .banner::after{
         width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .detailBlock, .relatedProductsSection, .banner{
+        width: 92%;
+        left: 4%;
+    }
+    .gallery, .stock, .mobRating span, nav, .sellerBtn, .save, .detailBlock, .banner{
+        display: none;
+    }
+    .productDetailSection{
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        left: 0;
+    }
+    .productImage, .productInfo, .sellerInfo{
+        width: 100%;
+    }
+    .image, .productDetailSection, .sellerInfo, .relatedProductsSection{
+        border: none;
+    }
+    
+    hr.hr{
+        display: block;
+        width: 100%;
+    }
+    .specification{
+        padding: 5px 0px;
+    }
+    .sellerBox{
+        padding: 13px 10px 0px 10px;
+        margin: 15px;
+    }
+    .relatedProductsSection{
+        padding: 0;
+    }
+    .relatedHeading{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .relatedProducts {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        scrollbar-width: none;
+    }
+
+    .relatedProduct {
+        flex: 0 0 auto;
+        width: auto;
+        border: 1px solid #DEE2E7;
+        border-radius: 6px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .relatedProduct p, .relatedProduct span{
+        padding-left: 10px;
+        width: 100%;
+    }
+    .relatedProduct img{
+        width: 80%;
+    }
+    .mobInquiry{
+        display: flex;
+        align-items: first baseline;
+    }
+    .inquiryBtn, .mobSave{
+        display: inline;
+    }
+    .inquiryBtn{
+        width: 80%;
+    }
+    .saveBtn, .notSaveBtn{
+        position: inherit;
+        font-size: 1.3rem;
     }
 }
