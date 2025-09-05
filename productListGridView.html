@@ -25,7 +25,7 @@
         <a href="homePage.html"><img src="assets/logo-colored.png" alt="Logo" class="headLogo"></a>
         <div class="searchBar rounded">
             <input type="text" placeholder="Search" class="roundedStart">
-        
+
             <div class="moreCategory" id="categoryToggle">
                 <a href="javascript:void(0)">
                     More Category<i class="fa-solid fa-angle-down"></i>
@@ -62,7 +62,25 @@
                 <p class="cartSpace">My cart</p>
             </a>
         </div>
+
+        <div class="mobDetailIcons">
+            <div class="topic">
+                <a href="homePage.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <h5>Mobile Accessories</h5>
+            </div>
+            <div  class="mobIcons">
+                <a href="cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
     </header>
+
+    
+    <!-- Mobile Search -->
+    <div class="mobileSearch">
+        <input type="text" placeholder="Search" class="rounded">
+    </div>
+
     <hr>
 
     <!-- navigation bar -->
@@ -82,6 +100,16 @@
             <div class="lang">English, USD <i class="fa-solid fa-angle-down"></i></div>
             <div class="payment">Ship to <img src="assets/icon.png" alt="country"> <i
                     class="fa-solid fa-angle-down"></i></div>
+        </div>
+
+        <!-- Mobile Categories -->
+        <div class="mobileCategories">
+            <a href="#" class="rounded">Tablet</a>
+            <a href="#" class="rounded">Phones</a>
+            <a href="#" class="rounded">Ipad</a>
+            <a href="#" class="rounded">Ipod</a>
+            <a href="#" class="rounded">Laptop</a>
+            <a href="#" class="rounded">Computer</a>
         </div>
     </nav>
     <hr>
@@ -213,7 +241,10 @@
 
         <!-- listGridSection -->
         <div class="listGridSection">
+            <hr class="topLine">
             <div class="topContent rounded">
+                <button id="sortBtn" class="toolbar rounded">Sort: Newest <span class="material-icons sort">sort</span></button>
+                <button id="filterBtn" class="toolbar rounded">Filter (3) <i class="fa-solid fa-filter"></i></button>
                 <div class="totalItems">
                     <span>12,911 items in </span>
                     <strong>Mobile accessory</strong>
@@ -229,12 +260,12 @@
                     </div>
                     <div class="listGridBtn">
                         <button id="gridViewBtn" class="rounded-start">
-                          <img src="assets/gridview.png" alt="gridview">
+                            <img src="assets/gridview.png" alt="gridview">
                         </button>
                         <button id="listViewBtn" class="rounded-end">
-                          <img src="assets/listview.png" alt="listview">
+                            <img src="assets/listview.png" alt="listview">
                         </button>
-                      </div>                      
+                    </div>
                 </div>
             </div>
 
@@ -245,7 +276,7 @@
 
             <!-- gridSection -->
             <section class="gridSection">
-                
+
             </section>
         </div>
     </section>
@@ -262,7 +293,7 @@
                 <div class="dropdownItem">Show 30</div>
             </div>
         </div>
-        
+
         <div class="btn-group pageCount">
             <button type="button" class="btn showBtn"><i class="fa-solid fa-angle-left"></i></button>
             <button type="button" class="btn showBtn">1</button>
@@ -277,7 +308,7 @@
         <h3>Subscribe on our newsletter</h3>
         <p>Get daily news on upcoming offers from many suppliers all over the world</p>
         <div class="emailSub d-flex">
-            <input class="me-2 rounded ps-2" type="email" placeholder="Email">
+            <input class="me-2 rounded ps-2 emailInput" type="email" placeholder="Email">
             <button class="btn btn-primary" type="submit">Subscribe</button>
         </div>
     </section>
