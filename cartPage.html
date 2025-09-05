@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/homePageStyle.css">
     <link rel="stylesheet" href="css/productDetailPageStyle.css">
+    <link rel="stylesheet" href="css/productListViewStyle.css">
     <link rel="stylesheet" href="css/cartPageStyle.css">
 </head>
 
@@ -42,7 +43,15 @@
                 <p class="cartSpace">My cart</p>
             </a>
         </div>
+
+        <div class="mobDetailIcons">
+            <div class="topic">
+                <a href="homePage.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <h4>Shopping Cart</h4>
+            </div>
+        </div>
     </header>
+    <hr class="hrCart">
 
     <h3 class="cartHeading">My cart (3)</h3>
 
@@ -201,7 +210,7 @@
                     <a href="#" class="btn btn-outline-primary apply">Apply</a>
                 </div>
             </div>
-            <div class="cartSummary shadow rounded">
+            <div class="cartSummary rounded">
                 <table class="cartTable">
                     <tr>
                         <td>Subtotal:</td>
@@ -267,29 +276,53 @@
     <section class="relatedProductsSection rounded">
         <p class="relatedHeading">Saved for later</p>
         <div class="relatedProducts">
-            <div class="relatedProduct saveLaterProducts">
-                <img src="assets/wallet.jpg" alt="wallet">
-                <p class="saveLaterPrice">$99.50</p>
-                <span>GoPro HERO6 4K Action Camera - Black</span>
-                <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
+                <div class="relatedProduct saveLaterProducts">
+                    <img src="assets/wallet.jpg" alt="wallet">
+                    <div>
+                        <p class="saveLaterPrice">$99.50</p>
+                        <span>GoPro HERO6 4K Action Camera - Black</span>
+                        <div>
+                            <button type="button" class="btn btn-outline-danger removeBtn mobRemoveBtn">Remove</button>
+                            <button type="button" class="btn btn-outline-primary cartProductBtn mobCartProductBtn">Save for later</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary moveToCart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>                
             </div>
             <div class="relatedProduct saveLaterProducts">
                 <img src="assets/8.jpg" alt="watch">
-                <p class="saveLaterPrice">$99.50</p>
-                <span>GoPro HERO6 4K Action Camera - Black</span>
-                <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
+                <div>
+                    <p class="saveLaterPrice">$99.50</p>
+                    <span>GoPro HERO6 4K Action Camera - Black</span>
+                    <div>
+                        <button type="button" class="btn btn-outline-danger removeBtn mobRemoveBtn">Remove</button>
+                        <button type="button" class="btn btn-outline-primary cartProductBtn mobCartProductBtn">Save for later</button>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline-primary moveToCart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
             </div>
             <div class="relatedProduct saveLaterProducts">
                 <img src="assets/headphone.jpg" alt="headphone">
-                <p class="saveLaterPrice">$99.50</p>
-                <span>GoPro HERO6 4K Action Camera - Black</span>
-                <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
+                <div>
+                    <p class="saveLaterPrice">$99.50</p>
+                    <span>GoPro HERO6 4K Action Camera - Black</span>
+                    <div>
+                        <button type="button" class="btn btn-outline-danger removeBtn mobRemoveBtn">Remove</button>
+                        <button type="button" class="btn btn-outline-primary cartProductBtn mobCartProductBtn">Save for later</button>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline-primary moveToCart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
             </div>
             <div class="relatedProduct saveLaterProducts">
                 <img src="assets/shorts.jpg" alt="shorts">
-                <p class="saveLaterPrice">$99.50</p>
-                <span>GoPro HERO6 4K Action Camera - Black</span>
-                <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
+                <div>
+                    <p class="saveLaterPrice">$99.50</p>
+                    <span>GoPro HERO6 4K Action Camera - Black</span>
+                    <div>
+                        <button type="button" class="btn btn-outline-danger removeBtn mobRemoveBtn">Remove</button>
+                        <button type="button" class="btn btn-outline-primary cartProductBtn mobCartProductBtn">Save for later</button>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline-primary moveToCart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</a>
             </div>
         </div>
     </section>
