@@ -22,10 +22,13 @@
 <body>
     <!-- header  -->
     <header class="header">
-        <a href="homePage.html"><img src="assets/logo-colored.png" alt="Logo" class="headLogo"></a>
+        <div class="mobLogo">
+            <div class="mobSideBar"><i class="fa-solid fa-bars"></i></div>
+            <a href="homePage.html"><img src="assets/logo-colored.png" alt="Logo" class="headLogo"></a>
+        </div>
         <div class="searchBar">
             <input type="text" placeholder="Search" class="rounded-start">
-        
+
             <div class="moreCategory" id="categoryToggle">
                 <a href="javascript:void(0)">
                     More Category<i class="fa-solid fa-angle-down"></i>
@@ -44,7 +47,7 @@
             </div>
             <a href="#" class="rounded-end btnText searchButton">Search</a>
         </div>
-        
+
         <div class="iconBar">
             <a href="#" class="icon">
                 <i class="fa-solid fa-user"></i>
@@ -63,7 +66,17 @@
                 <p class="cartSpace">My cart</p>
             </a>
         </div>
+
+        <div class="mobIcons">
+            <a href="cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
     </header>
+
+    <!-- Mobile Search -->
+    <div class="mobileSearch">
+        <input type="text" placeholder="Search" class="rounded">
+    </div>
     <hr>
 
 
@@ -84,6 +97,16 @@
             <div class="lang">English, USD <i class="fa-solid fa-angle-down"></i></div>
             <div class="payment">Ship to <img src="assets/icon.png" alt="country"> <i
                     class="fa-solid fa-angle-down"></i></div>
+        </div>
+
+        <!-- Mobile Categories -->
+        <div class="mobileCategories">
+            <a href="#" class="rounded">All category</a>
+            <a href="#" class="rounded">Gadgets</a>
+            <a href="#" class="rounded">Clothes</a>
+            <a href="#" class="rounded">Accessories</a>
+            <a href="#" class="rounded">Sports</a>
+            <a href="#" class="rounded">Furniture</a>
         </div>
     </nav>
     <hr>
@@ -107,7 +130,7 @@
             <h2 class="bannerheading">Electronic items</h2>
             <a href="productListGridView.html" class="btn btn-light bannerBtn">Learn more</a>
         </div>
-        
+
         <div class="joinQuotes">
             <div class="joinbtn rounded">
                 <div class="avatar">
@@ -132,10 +155,12 @@
     <!-- sale section  -->
     <section class="saleSection">
         <div class="dealOffer">
-            <h5>Deals and offers</h5>
-            <p>Hygiene equipments</p>
+            <div class="dealOfferLine">
+                <h5>Deals and offers</h5>
+                <p>Hygiene equipments</p>
+            </div>
             <div class="timer">
-                <div class="time">
+                <div class="time day">
                     <strong>04</strong>
                     <p>Days</p>
                 </div>
@@ -153,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="dealProducts">
+        <div class="dealProducts rounded">
             <a href="productListView.html" class="sale">
                 <img src="assets/8.jpg" alt="watch">
                 <p>Smart Watches</p>
@@ -188,64 +213,65 @@
             <img src="assets/image 92.png" alt="left-aside image">
             <p class="leftSide">Home and<br>outdoor</p>
             <button type="button" class="btn btn-light leftAsideBtn">Source now</button>
+            <h3 class="mobview">Home and outdoor</h3>
         </div>
-        <div class="items">
-            <div class="item borderLine">
+        <div class="items rounded">
+            <a href="#" class="item borderLine">
                 <h6>Soft chairs</h6>
                 <div class="itemimg">
                     <span>From <br>USD 19</span>
                     <img src="assets/1.jpg" alt="chairs">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Lamp</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/lamp.jpg" alt="lamp">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Mattress</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/mattress.jpg" alt="mattress">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Mud jar</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/pot.jpg" alt="pot">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
                 <h6>Kitchen mixer</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/9.jpg" alt="mixer">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Blender</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/blender.jpg" alt="blender">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Home appliance</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/stand.jpg" alt="stand">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Flower pot</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/4.jpg" alt="flower">
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -255,64 +281,65 @@
             <img src="assets/image 98.png" alt="left-side image">
             <p class="leftSide">Consumer<br>electronics and <br>gadgets</p>
             <button type="button" class="btn btn-light leftSideBtn">Source now</button>
+            <h3 class="mobview">Consumer electronics</h3>
         </div>
-        <div class="items">
-            <div class="item borderLine">
+        <div class="items rounded">
+            <a href="#" class="item borderLine">
                 <h6>Smart watches</h6>
                 <div class="itemimg">
                     <span>From <br>USD 19</span>
                     <img src="assets/8.jpg" alt="watch">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Camera</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/6.jpg" alt="cameras">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Headphones</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/headphone.jpg" alt="headphone">
                 </div>
-            </div>
-            <div class="item borderLine">
+            </a>
+            <a href="#" class="item borderLine">
                 <h6>Electric Kattle</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/10.jpg" alt="jug">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Gaming set</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/5.jpg" alt="Gaming set">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Laptop & PC</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/7.jpg" alt="laptop">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Smartphones</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/2.jpg" alt="tab">
                 </div>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
                 <h6>Mobile phone</h6>
                 <div class="itemimg">
                     <span>From<br>USD 19</span>
                     <img src="assets/mobile.jpg" alt="mobile">
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -322,6 +349,7 @@
             <h2>An easy way to send requests to all suppliers</h2>
             <p>Lorem ipsum dolor, sit amet consectetur elit. Dolor labore ipsum fugit consequuntur architecto
                 perferendis.</p>
+                <a href="#" class="btn btn-primary mobBtn">Send inquiry</a>
         </div>
         <div class="inquiryBox rounded">
             <h5 class="rounded">Send quote to suppliers</h5>
