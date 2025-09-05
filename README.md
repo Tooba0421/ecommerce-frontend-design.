@@ -49,7 +49,7 @@ ecommerce-frontend-design/
 ---
 
 ## ✅ Main features
-- Responsive layout (all desktop screens)
+- Responsive layout (all desktop and mobile screens)
 - Grid ↔ List view toggle for product listings
 - Price range slider and filters in sidebar
 - Product detail page with tabs and gallery
