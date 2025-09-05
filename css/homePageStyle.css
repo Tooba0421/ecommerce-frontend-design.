@@ -14,7 +14,16 @@ body {
     color: #1C1C1C;
 }
 
-.header, nav, .mainSection, .saleSection, .itemBlock, .inquirySection, .recommendSection, .serviceSection, .supplierSection, .footer {
+.header,
+nav,
+.mainSection,
+.saleSection,
+.itemBlock,
+.inquirySection,
+.recommendSection,
+.serviceSection,
+.supplierSection,
+.footer {
     position: relative;
     width: 86%;
     left: 7%;
@@ -134,7 +143,28 @@ a {
     font-weight: 400;
     margin-top: 5px;
 }
-hr{
+
+.mobIcons,
+.mobSideBar,
+.mobileCategories,
+.mobview, .mobBtn {
+    display: none;
+}
+
+/* Mobile search bar */
+.mobileSearch {
+    display: none;
+    margin: 0 1rem;
+}
+
+.mobileSearch input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #DEE2E7;
+    outline: none;
+}
+
+hr {
     opacity: 0.15;
     margin: 0;
 }
@@ -152,7 +182,7 @@ nav {
     display: flex;
     justify-content: start;
     align-items: center;
-    
+
 }
 
 .sideBar i {
@@ -208,23 +238,27 @@ nav {
     width: 55%;
     position: relative;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     height: 23rem;
 }
-.bannertext{
+
+.bannertext {
     position: absolute;
     top: 57px;
     left: 40px;
     font-weight: 400;
 }
-.bannerheading{
+
+.bannerheading {
     position: absolute;
     top: 92px;
     left: 40px;
     font-weight: 700;
 }
-.bannerBtn{
+
+.bannerBtn {
     position: absolute;
     top: 155px;
     left: 40px;
@@ -319,11 +353,11 @@ nav {
     border-radius: 6px;
 }
 
-.time strong{
+.time strong {
     font-size: 1rem;
 }
 
-.time p{
+.time p {
     font-size: 12px;
     margin-bottom: 0;
 }
@@ -358,29 +392,34 @@ nav {
     border-radius: 6px;
     display: flex;
 }
-.sideimg{
+
+.sideimg {
     position: relative;
 }
-.leftSide{
+
+
+.leftSide {
     position: absolute;
     top: 20px;
     left: 23px;
     font-size: 20px;
     font-weight: 600;
 }
-.leftAsideBtn{
+
+.leftAsideBtn {
     position: absolute;
     top: 100px;
     left: 25px;
 }
-.leftSideBtn{
+
+.leftSideBtn {
     position: absolute;
     top: 120px;
     left: 25px;
 }
+
 .items {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -413,7 +452,7 @@ nav {
 .inquirySection {
     margin: 20px 0px;
     background: linear-gradient(to right, rgba(13, 110, 253, 1), rgba(13, 109, 253, 0.5)),
-    url('assets/image 102.jpg');
+        url('assets/image 102.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -425,6 +464,7 @@ nav {
 .inquirytext {
     width: 21rem;
 }
+
 .inquiryBox {
     background-color: white;
     color: black;
@@ -484,7 +524,8 @@ textarea {
     width: 11rem;
     height: 11rem;
 }
-.recommendItem span{
+
+.recommendItem span {
     width: 100%;
     font-weight: 500;
 }
@@ -621,11 +662,12 @@ textarea {
     padding: 50px 0px;
     background-color: #EFF2F4;
 }
-.subscribe p{
+
+.subscribe p {
     color: #606060;
 }
 
-.emailSub input {
+.emailInput {
     border: 1px solid gray;
     width: 15rem;
 }
@@ -731,21 +773,26 @@ textarea {
 
 @media (max-width: 1285px) {
     .searchBar {
-        width: 30rem; /* reduced from 41.563rem */
+        width: 30rem;
+        /* reduced from 41.563rem */
     }
 
     .searchBar input {
-        width: 16rem; /* reduced from 26.313rem */
-        padding: 0.35rem 0px 0.35rem 0.625rem;        ;
+        width: 16rem;
+        /* reduced from 26.313rem */
+        padding: 0.35rem 0px 0.35rem 0.625rem;
+        ;
     }
 
     .moreCategory {
-        width: 9rem; /* slightly smaller */
+        width: 9rem;
+        /* slightly smaller */
         font-size: 0.9rem;
     }
 
     .searchButton {
-        width: 5.5rem; /* reduced from 6.25rem */
+        width: 5.5rem;
+        /* reduced from 6.25rem */
         font-size: 0.9rem;
     }
 }
@@ -757,7 +804,7 @@ textarea {
     }
 
     .category {
-        width: 22%; 
+        width: 22%;
     }
 
     .banner {
@@ -765,17 +812,17 @@ textarea {
     }
 
     .banner img {
-        height: 20rem; 
+        height: 20rem;
     }
 
     .bannertext {
-        font-size: 1.25rem; 
+        font-size: 1.25rem;
         top: 45px;
         left: 25px;
     }
 
     .bannerheading {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         top: 80px;
         left: 25px;
     }
@@ -861,9 +908,242 @@ textarea {
     }
 }
 
-@media (max-width: 1140px){
+@media (max-width: 1140px) {
     .sale img {
         width: 100px;
         height: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header,
+    nav,
+    .saleSection,
+    .itemBlock,
+    .inquirySection,
+    .recommendSection,
+    .serviceSection,
+    .supplierSection,
+    .footer {
+        width: 92%;
+        left: 4%;
+    }
+
+    .searchBar,
+    .iconBar,
+    hr,
+    .navOptions,
+    .languagePayment,
+    .mobileCategories::-webkit-scrollbar,
+    .category,
+    .joinQuotes,
+    .day,
+    .sideimg img,
+    .leftAsideBtn,
+    .leftSide,
+    .leftSideBtn, .inquirytext p, .inquiryBox, .links{
+        display: none;
+    }
+
+    .headLogo {
+        width: 80%;
+    }
+
+    .mobIcons {
+        display: block;
+        font-size: 20px;
+    }
+
+    .mobIcons a {
+        margin-left: 10px;
+    }
+
+    .mobSideBar {
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    .mobLogo,
+    .mobileCategories {
+        display: flex;
+        align-items: center;
+    }
+
+    .headLogo {
+        transform: scale(0.9);
+    }
+
+    .mobileSearch {
+        display: block;
+    }
+
+    /* (scrollable) */
+    .mobileCategories,
+    .dealProducts, .items {
+        display: flex;
+        overflow-x: auto;
+        gap: 0.5rem;
+        scrollbar-width: none;
+    }
+
+    .mobileCategories a {
+        flex: 0 0 auto;
+        padding: 6px 10px;
+        border: 1px solid #DEE2E7;
+        color: #0D6EFD;
+        background: #EFF2F4;
+    }
+
+    .mainSection {
+        width: 100%;
+        left: 0;
+        padding: 0;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .saleSection {
+        flex-direction: column;
+        border: none;
+        padding: 0px;
+    }
+
+    .dealOffer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    .dealOfferLine h5 {
+        font-size: 19px;
+    }
+
+    .dealOfferLine p {
+        font-size: 15px;
+    }
+
+    .time {
+        background: #EFF2F4;
+        color: #8B96A5;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .day {
+        display: none;
+    }
+
+    .dealProducts {
+        width: auto;
+        border: 1px solid #DEE2E7;
+        justify-content: space-between;
+    }
+    
+    .dealProducts a {
+        padding: 0px 10px;
+        flex: 0 0 auto;
+        width: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .itemBlock {
+        flex-direction: column;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .mobview {
+        display: block;
+        font-weight: 700;
+    }
+    
+    .items {
+        width: 100%;
+        flex-wrap: nowrap;
+        border: 1px solid #DEE2E7;
+    }
+    
+    .item {
+        flex: 0 0 auto;    
+        width: auto;
+    }
+
+    .inquirySection{
+        padding: 30px ;
+    }
+    .mobBtn{
+        display: block;
+        width: fit-content;
+    }
+    .recommendItems, .services, .countries{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .recommendItem{
+        width: 45%;
+        /* border: none; */
+    }
+    .service{
+        margin-right: 40px;
+    }
+    .service, .country{
+        width: 45%;
+    }
+    .subscribe p{
+        padding: 5px 20px;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .logoIcons, .getApp{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .recommendSection h3, .serviceSection h3, .supplierSection h3{
+        font-weight: 700;
+    }
+    .storeButtons{
+        flex-direction: row;
+    }
+    .storeBtn{
+        /* width: 35%; */
+        padding: 5px;
+    }
+    .getApp h6{
+        margin: 5px 0px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px){
+    .service{
+        margin-right: 0;
+    }
+}
+@media (max-width: 420px){
+    .countries{
+        flex-wrap: wrap;
+    }
+    .country{
+        width: auto;
+    }
+}
+@media (max-width: 500px){
+    .recommendItem, .service{
+        width: 50%;
+        border: none;
     }
 }
